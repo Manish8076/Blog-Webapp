@@ -1,0 +1,80 @@
+
+{% extends 'home.html' %}
+{% load static %}
+
+{% block contact %}
+
+
+<style>
+
+#card2{
+    padding: 30px;
+}
+
+#carouselExampleDark{
+    object-fit: cover;
+    padding: 100px;
+}
+
+</style>
+
+<div id="carouselExampleDark" style="color: white;" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'images/IIMT1.webp' %}" class="d-block w-100" alt="...">
+       
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'images/IIMT2.png' %}" class="d-block w-100" alt="...">
+      
+      </div>
+    </div>
+     <br>
+ 
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <div  id="card2" class= "card-group" style="height: 600px;">
+    <div class="card">
+      
+      <div class="card-body">
+        <h4 class="card-title">Who we are</h4>
+        <br>
+        <p class="card-text">IIMT Greater Noida Highlights 2023
+            Accordion Icon V3
+            IIMT Noida was established in 1994 and is approved by AICTE, the Pharmacy Council of India, and the Bar Council of India. IIMT was established under the aegis of the Association of Management Studies and is accredited by NAAC and NBA. IIMT Greater Noida, through more than seven colleges, offers UG, PG, and other courses to students across Engineering, Computer Science, and various other streams. Some of the colleges under the IIMT Group of Colleges are affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow, Uttar Pradesh, the Board of Technical Education, Uttar Pradesh, and Chaudhary Charan Singh University. IIMT Group of Colleges is ranked 144 by The Times 2022 for BTech. The major highlights of the IIMT Group of Colleges This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+    <div class="card">
+      
+      <div class="card-body">
+        <h4 class="card-title">Our Curriculum</h4>
+        <br>
+        <p class="card-text">IIMT Greater Noida Popular Programmes 2023
+            The modes of IIMT Greater Noida admission are online and offline. Admission to various courses is based on merit and entrance exam scores. At the UG level, the IIMT Group of Colleges offers three to four-year BTech, three-year BSc, BCA, and other courses to students. At the PG level, the IIMT College Greater Noida offers two-year MBA, MCA, and various other courses to students. IIMT College also provides diploma and other courses to students. Below mentioned are some of the courses offered by the IIMT Group of Colleges and their respective eligibility and fee:This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+{% endblock contact %}
+

@@ -1,0 +1,28 @@
+{% extends 'home.html' %}
+{% load static %}
+
+
+
+{% block contact %}
+
+
+
+
+
+
+<div   class="card mb-3">
+  <div id="cd" style="object-fit: cover;">
+    <img height="600px" src="{% static 'images/tmp3.jpg' %}" class="card-img-top" alt="...">
+  </div>
+    
+    <div class="card-body">
+      <h5 class="card-title">{{viewBlog.title}}</h5>
+      <h3>{{viewBlog.author}}</h3>
+      
+      <p class="card-text">{{viewBlog.content|safe}}</p>
+      <p class="card-text"><small class="text-body-secondary">{{viewBlog.posted_date}}</small></p>
+    </div>
+  </div>
+ 
+
+{% endblock contact %}
